@@ -1,7 +1,7 @@
 # ru_compact.wiktionary.org
 Почищенный дамп викисловаря для русского языка
 
-Создан на основе данный, находящихся тут: https://kaikki.org/dictionary/rawdata.html
+Создан на основе данный, находящихся тут: https://kaikki.org/dictionary/rawdata.html</br>
 Прямая ссылка на исходный дамп: https://kaikki.org/dictionary/downloads/ru/ru-extract.jsonl.gz
 
 Оставлена только грамматическая информация о словах, остальное удалено.
