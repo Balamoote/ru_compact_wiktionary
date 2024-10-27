@@ -1,7 +1,7 @@
 #!/bin/bash
 
  infile="ru1022.gz"
-#infile="test.gz"
+#infile="test.txt.gz"
 
  zgrep -E -v '^{"word": "-' $infile | \
 
@@ -14,6 +14,7 @@
  #            .coordinate_terms, .variants, .word, .pos, .senses, .tags, .forms,
               .meronyms, .hyponyms, .homonyms, .hypernyms, .synonyms, .anagrams, .antonyms, .holonyms, .metagrams )' |\
 
- sed -rf compact.sed | sort -u | gzip > ru_compact.wik.gz
+ sed -rf compact.sed | gzip > ru_compact.wik.gz
+#sed -rf compact.sed | sort -u > ru_compact.wik
 
 
