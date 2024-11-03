@@ -1,6 +1,6 @@
 #!/bin/bash
 
-moda="1022"
+moda="1102"
 
 wiki="ru-extract.jsonl.gz"
 

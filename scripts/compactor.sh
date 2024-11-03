@@ -1,6 +1,6 @@
 #!/bin/bash
 
- infile="ru1022.gz"
+ infile="ru1102.gz"
 #infile="test.txt.gz"
 
  zgrep -E -v '^{"word": "-' $infile | \
