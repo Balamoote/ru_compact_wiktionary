@@ -1,4 +1,4 @@
-# ru_compact.wiktionary.org
+# ru_compact.wiktionary
 
 Почищенный дамп викисловаря для русского языка
 
