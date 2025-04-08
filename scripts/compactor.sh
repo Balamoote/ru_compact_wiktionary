@@ -1,7 +1,7 @@
 #!/bin/bash
+if command -v pigz >/dev/null 2>&1; then zipper="pigz"; else zipper="gzip"; fi
 
- infile="ru1106.gz"
-#infile="test.txt.gz"
+ infile="ru"$(cat version)".gz"
 
  zgrep -E -v '^{"word": "-' $infile | \
 
@@ -14,7 +14,6 @@
  #            .coordinate_terms, .variants, .word, .pos, .senses, .tags, .forms,
               .meronyms, .hyponyms, .homonyms, .hypernyms, .synonyms, .anagrams, .antonyms, .holonyms, .metagrams )' |\
 
- sed -rf compact.sed | gzip > ru_compact.wik.gz
-#sed -rf compact.sed | sort -u > ru_compact.wik
+ sed -rf compact.sed | $zipper > ru_compact.wik.gz
 
 
